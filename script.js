@@ -42,11 +42,11 @@ function playRound(human, computer) {
                     break;
                 case "Paper":
                     console.log("You lose! Paper beats Rock");
-                    computerScore += 1;
+                    computerScore ++;
                 break;
                 case "Scissors":
                     console.log("You Win! Rock beats Scissors");
-                    humanScore += 1;
+                    humanScore ++;
                 break;
                 default:
             }
@@ -59,11 +59,11 @@ function playRound(human, computer) {
                     break;
                 case "Rock":
                     console.log("You Win! Paper beats Rock");
-                    humanScore += 1;
+                    humanScore ++;
                 break;
                 case "Scissors":
                     console.log("You Lose! Scissors beat Paper");
-                    computerScore += 1;
+                    computerScore ++;
                 break;
                 default:
             }
@@ -76,11 +76,11 @@ function playRound(human, computer) {
                     break;
                 case "Rock":
                     console.log("You Lose! Rock beats Scissors");
-                    computerScore += 1;
+                    computerScore ++;
                 break;
                 case "Paper":
                     console.log("You Win! Scissors beat Paper");
-                    humanScore += 1;
+                    humanScore ++;
                 break;
                 default:
             }
