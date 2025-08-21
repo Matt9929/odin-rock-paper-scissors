@@ -1,13 +1,14 @@
+//Initialize the scoreboard
 let humanScore = 0;
 let computerScore = 0;
 
-// Definisce la scelta dell'utente
+// Get user choice
 const humanSelection = function() {
     let choice = prompt ("Make your choice: Rock - Paper - Scissors");
     return choice;
 };
 
-// Definisce la scelta della CPU
+// Get CPU choice
 const computerSelection = function() {
     let rand = function() {
         return Math.floor(Math.random()*3)+1;
@@ -27,12 +28,12 @@ const computerSelection = function() {
     }
 
 }
-// Funzione che gestisce un round
+// Plays a round
 function playRound(human, computer) {
     console.log("You chose: " + human);
     console.log("Computer chose: " + computer);
     
-    // Compare the choices
+    // Compares the choices
     switch (human) {
         case "Rock":
             switch (computer) {
@@ -87,6 +88,7 @@ function playRound(human, computer) {
     }
 }
 
+//Plays a game of 5 rounds and outputs the final results
 for (let round=0; round<5; round++) {
 playRound(humanSelection(), computerSelection());
 }
